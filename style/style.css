@@ -40,9 +40,8 @@ body{
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 3rem 3rem;
     text-align: center;
-    height: 700px;
 }
 
 h1{
@@ -62,12 +61,12 @@ h2{
 }
 
 .image{
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .me{
-    width: 200px;
+    width: 230px;
     clip-path: circle();
 }
 
@@ -108,6 +107,19 @@ button:hover{
 
 button:hover a{
     color:var(--color1);
+}
+
+@media only screen and (max-width: 1400px){
+    .container{
+        padding: 0 3rem;
+    }
+    .me{
+        width:200px;
+    }
+    .image{
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .about{
