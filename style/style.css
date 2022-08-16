@@ -22,26 +22,24 @@ body{
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: fixed; 
     top: 0;
     right: 0;
     left: 0;
-    height: 65px;
-    max-width: 1400px;
+    height: 50px;
     margin: 0 auto;
     padding: 2em;
-    background-color: rgb(255, 255, 255);
+    background: rgba(0,0,0,0.4);
     z-index: 1000;
-    box-shadow: 0px 1px 10px -5px rgba(85,85,85,0.76);
 }
 
 ul.menu {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    width:90%;
+    justify-content: flex-end;
+    min-width:1000px;
 }
 
 ul.menu a {
@@ -50,9 +48,9 @@ ul.menu a {
     text-transform: uppercase;
     color: var(--color1);
     padding: .2em;
+    margin: 0 40px;
     letter-spacing: 1px;
     font-size: 1.4em;
-    font-weight: 200;
     overflow: hidden;
 }
 
@@ -73,6 +71,7 @@ ul.menu a {
     nav {
         display: flex;
         justify-content: space-between;
+        background: none;
     }
 
     .burger {
@@ -123,11 +122,11 @@ ul.menu a {
     ul.menu {
         padding-top: 50px;
         position: absolute;
-        width:60%;
+        width:70%;
         left: 0;
-        top: 64px;
-        background-color: rgba(255, 255, 255, 0.94);
-        height: calc(100vh - 64px);
+        top: 50px;
+        /* background-color: rgba(255, 255, 255, 0.94); */
+        /* height: calc(100vh - 64px); */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -175,7 +174,7 @@ ul.menu a {
     }
 }
 
-@media (max-width: 900px) and (orientation: landscape){
+/* @media (max-width: 900px) and (orientation: landscape){
     ul.menu {
         padding-top: 5px;
     }
@@ -202,7 +201,7 @@ ul.menu a {
         font-size: 1.7em;
         letter-spacing: 1px;
     }
-}
+} */
 
 .wrapper{
     display: flex;
@@ -223,7 +222,7 @@ ul.menu a {
     flex-direction: column;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 050px auto;
     padding: 3rem 3rem;
     text-align: center;
 }
