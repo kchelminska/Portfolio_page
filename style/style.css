@@ -157,21 +157,21 @@ ul.menu a {
         width: 40%;
         height: 60px;
         line-height: 60px;
-        border-bottom: 1px solid var(--colorhover);
+        /* border-bottom: 1px solid var(--colorhover); */
     }
 
-    ul.menu li:last-child{
+    /* ul.menu li:last-child{
         border-bottom: none;
-    }
+    } */
 
     ul.menu li a {
         font-size: 2.2em;
         letter-spacing: 2px;
     }
 
-    ul.menu a::after {
+    /* ul.menu a::after {
         display: none;
-    }
+    } */
 }
 
 /* @media (max-width: 900px) and (orientation: landscape){
@@ -222,13 +222,13 @@ ul.menu a {
     flex-direction: column;
     justify-content: center;
     max-width: 1000px;
-    margin: 050px auto;
+    margin: 30px auto;
     padding: 3rem 3rem;
     text-align: center;
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     letter-spacing: 7px;
     margin-bottom: 2rem;
@@ -237,7 +237,7 @@ h1{
 
 h2{
     color: var(--color2);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 4px;
     margin-bottom: 2rem;
@@ -279,11 +279,6 @@ h2{
     line-height: 50px;
     transition: all 0.3s;
   }
-
-/* .btn span{
-    transition: all 0.3s;
-    transform: scale(1, 1);
-} */
   
 .btn::before, .btn::after {
     content: '';
@@ -317,6 +312,10 @@ h2{
 .btn-one:hover::after {
     transform: scale(1, .1);
     opacity: 0;
+}
+
+.button {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1400px){
