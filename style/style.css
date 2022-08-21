@@ -156,10 +156,6 @@ ul.active {
         border-radius: 0;
     }
 
-    nav.active{
-        background-color:red;
-    }
-
     .opacity{
         display: none;
     }
@@ -251,6 +247,7 @@ h2{
     width: 100%;
     height: 100%;
     z-index: 1;
+    border-radius: 3px;
 }
   
 .btn-one::before {
@@ -293,6 +290,8 @@ h2{
     }
 }
 
+/* PROJECTS SECTION */
+
 #projects{
     text-align: center;
     display: flex;
@@ -316,28 +315,32 @@ h2{
 
 #projects > h2{
     padding: 5rem 0 1rem;
+    font-size: 26px ;
 }
 
 .project{
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     margin: 0.7rem;
     margin-bottom: 50px;
     width: 300px;
     padding: 2rem;
     line-height: 2rem;
+    border-radius: 3px;
     color: var(--color2);
 }
 
 .project h3{
     color: var(--color1);
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: 400;
     margin: 3rem 0 2rem 0;
 }
 
 .project img{
-    width: auto;
-    height: 120px;
-    clip-path: circle();
+    max-width: 195px;
+    height: 130px;
+    border-radius: 3px;
+    /* clip-path: circle(); */
 }
 
 .project > p{
@@ -353,136 +356,40 @@ h2{
     color: var(--color1);
 }
 
+/* TOOLS SECTION */
 
-
-
-
-
-/*  Hobby page */
-/* 
-.wrapper_about{
-    display: flex;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../image/bg_image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    max-width: 1400px;
-    height: calc(100vh - 30px);
-    overflow: hidden;
+#tools{
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
 }
 
-.wrapper_about div{
-    min-width: 50%;
+#tools h2{
+    font-size: 26px;
+    padding: 5rem 0 0 0;
 }
 
-.wrapper_about:first-child{
+section.tools{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    margin: 0 auto 5rem auto;
+    width: 1000px;
+    height: 250px;
 }
 
-.section_left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.tool{
+    width: 120px;
+    height: 120px;
+    background-color: #e27a25;
+    clip-path: circle();
 }
-
-.section_left h1{
-    padding-top: 0;
-}
-
-.section_left a{
-    color:white;
-    text-decoration: none;
-    font-size: 2rem;
-    transition: 0.3s;
-}
-
-.section_left a:hover{
-    color: var(--color1);
-}
-
-.section_right .resize{
-    border-radius: 10px;
-    max-width: 300px;
-    height: 150px;
-    background-size: 102%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.3s;
-}
-
-.section_right p{
-    padding-left: 2rem;
-}
-
-.hobbys .resize:first-of-type{
-    background-image: url("../image/hobby1.jpg");
-    margin: 0.5rem 0 1.5rem 0;
-}
-
-.hobbys .resize:nth-of-type(2){
-    background-image: url("../image/hobby2.jpg");
-    margin: 0.5rem 0 1.5rem 0;
-}
-
-.hobbys .resize:nth-of-type(3){
-    background-image: url("../image/hobby3.jpg");
-    margin-top:0.5rem;
-}
-
-.resize:hover{
-    background-size: 110%;
-    transition: 0.3s;
-} */
-
-/* Trips Section */
-/* 
-.trips{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.trip .section_right div{
-    display: flex;
-    flex-direction: column;
-    max-width: 250px;
-    margin-top:.5rem;
-}
-
-.trips div .resize:first-of-type{
-    background-image: url("../image/trip1.jpg");
-}
-
-.trips div:nth-of-type(2) .resize{
-    background-image: url("../image/trip2.jpg");
-}
-
-.trips div:nth-of-type(3) .resize{
-    background-image: url("../image/trip3.jpg");
-}
-
-.trips div:nth-of-type(4) .resize{
-    background-image: url("../image/trip4.jpg");
-}
-
-.trips div:nth-of-type(5) .resize{
-    background-image: url("../image/trip5.jpg");
-}
-
-.trips div:nth-of-type(6) .resize{
-    background-image: url("../image/trip6.jpg");
-} */
 
 /* Footer */
 
 footer{
     background: rgba(0,0,0,1);
     width: 100%;
-    height: 30px;
     text-align: center;
     padding: 1rem 0;
     color: #8e8b8b;
