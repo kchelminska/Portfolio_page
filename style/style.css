@@ -405,7 +405,7 @@ section.tools{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 4rem auto;
-    padding: 0 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
     max-width: 1100px;
     height: 250px;
 }
@@ -437,7 +437,7 @@ section.tools{
 
 @media (max-width: 800px){
     section.tools{
-        height: 150px;
+        height: 120px;
     }
 }
 
@@ -448,6 +448,66 @@ section.tools{
 
     section.tools{
         height: 100px;
+    }
+}
+
+/* Contact Mail */
+.contactMail{
+    width: 100%;
+    text-align: right;
+    max-width: 1100px;
+    padding: 0 2rem;
+}
+
+.contactMail p:nth-of-type(1){
+    text-transform: uppercase;
+    color: var(--color2);
+    font-size: 2.5em;
+    margin-top: 70px;
+    font-weight: 200;
+}
+
+.contactMail p:nth-of-type(2){
+    text-transform: uppercase;
+    color: var(--color1);
+    font-size: 3.5em;
+    padding-bottom: 70px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 800px){
+    .contactMail p:nth-of-type(1){
+        font-size: 1.5em;
+    }
+    .contactMail p:nth-of-type(2){
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 600px){
+    .contactMail p:nth-of-type(1){
+        font-size: 1.5em;
+    }
+    .contactMail p:nth-of-type(2){
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px){
+    .contactMail p:nth-of-type(1){
+        font-size: 1.3em;
+    }
+    .contactMail p:nth-of-type(2){
+        font-size: 1.7em;
+    }
+}
+@media (max-width: 400px){
+    .contactMail p:nth-of-type(1){
+        font-size: 1.3em;
+    }
+    .contactMail p:nth-of-type(2){
+        font-size: 1.5em;
     }
 }
 
