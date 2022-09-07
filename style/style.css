@@ -496,102 +496,30 @@ section.tools{
     }
 }
 
-/* Contact Info */
-.contact{
-    display: flex;
-    width: 100%;  
-}
-
-.contactInfo{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
+/* CARDs - contact */
+.contact-wraper{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    width: 100%;
-    min-height: 400px;
+    text-align: center;
 }
-
-.contactInfo .quote{
-    position: relative;
-    background-color: var(--color1);
-    width: 50%;
-    height: 100%;
-    font-size: 4rem;
-    text-transform: uppercase;
-    text-align: right;
-    
-}
-
-.quote >div{
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0, -50%);
-    padding-right: 5rem;
-    padding-left: 5rem;
-}
-
-.contactInfo .social{
-    width: 50%;
-}
-
-.contactInfo .socialmedia{
-    height: 40%;
-}
-.contactInfo .cv{
-    background-color: burlywood;
-}
-
-/* .contactInfo */
-/* 
-.socialmedia{
-    display: flex;
-    align-items: center;
-}
-
-.socialmedia a img{
-    height: 50px;
-    margin: 40px;
-}
-
-.cv a img{
-    margin: 40px;
-    height: 20px;
-    width: 20px;
-}
-
-
-@media (max-width: 600px ) {
-    .contactInfo{
-        flex-direction: column;
-    }
-
-    .contactInfo .quote{
-        min-height: 300px;
-        width: 100%;
-    }
-
-    .socialmedia{
-        justify-content: center;
-        padding: 5rem;
-    }
-
-    .contactInfo .social{
-        width: 100%;
-    }
-} */
-
-/* CARD */
-
 .contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1100px;
     min-height: 200px;
 }
 
 .cards{
     position: relative;
-    width: 30%;
-    height: 200px;   
+    width: 260px;
+    height: 180px;   
 }
 
 .card{ 
@@ -635,6 +563,32 @@ section.tools{
     transform: perspective(600px) rotateY(0deg);
 }
 
+.socialmedia a img{
+    width: 30%;
+}
+
+@media (max-width: 800px){
+    .cards{
+        width: 200px;
+        height: 200px;   
+    }
+}
+
+@media (max-width: 650px){
+    .contact-wraper{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contact{
+        flex-direction: column;  
+    }
+
+    .cards{
+        margin-top: 20px;
+        width: 60%;
+        min-width: 250px;
+    }
+}
 
 /* Footer */
 footer{
