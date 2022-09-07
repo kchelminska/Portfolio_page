@@ -501,7 +501,7 @@ section.tools{
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     text-align: center;
 }
@@ -551,7 +551,7 @@ section.tools{
 }
 
 .back{
-    background-color: var(--color2);
+    background-color: rgba(226, 122, 37, 0.7);
     transform: perspective(600px) rotateY(180deg);
 }
 
@@ -563,9 +563,47 @@ section.tools{
     transform: perspective(600px) rotateY(0deg);
 }
 
-.socialmedia a img{
-    width: 30%;
+.front h1{
+    text-transform: uppercase;
 }
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.socialmedia a {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: .4s; 
+}
+
+.socialmedia a img{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socialmedia a:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .4s; 
+}
+
+.cv img{
+    width: 40px;
+    height: auto;
+}
+
 
 @media (max-width: 800px){
     .cards{
