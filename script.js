@@ -2,6 +2,7 @@
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const opacityMenu = document.querySelector(".opacity");
+// const hover = document.querySelector('.icon');
 
 const showNav = () => {
     menu.classList.toggle('active');
