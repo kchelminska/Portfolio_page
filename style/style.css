@@ -342,16 +342,16 @@ h2{
 }
 
 .first_project {
-    background-image: url(../image/projekt2_img.PNG);
+    background-image: url(./image/projekt2_img.PNG);
 }
 
 .second_project {
-    background-image: url(../image/projekt1_img.PNG);
+    background-image: url(./image/projekt1_img.PNG);
     background-position: top left;
 }
 
 .third_project{
-    background-image: url(../image/projekt3_img.PNG);
+    background-image: url(./image/projekt3_img.PNG);
 }
 
 .project h3{
