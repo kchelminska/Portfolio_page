@@ -180,6 +180,7 @@ ul.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     max-width: 1000px;
     margin: 30px auto;
     padding: 3rem 3rem;
@@ -212,12 +213,29 @@ h2{
     clip-path: circle();
 }
 
-.container p{
+.machineText{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    min-height: 110px;
+}
+
+.machineText span.machine, .cursor{
     font-size: 1.5rem;
     color: var(--color2);
     line-height: 3.5rem;
     margin-bottom: 3rem;
 }
+
+.cursor {
+    opacity: 0;
+    transition: .2s;
+   }
+ 
+ 
+   .cursor.active {
+    opacity: 1;
+   }
 
 .container-button{
     text-align: center;
@@ -342,16 +360,16 @@ h2{
 }
 
 .first_project {
-    background-image: url(./image/projekt2_img.PNG);
+    background-image: url(../image/projekt2_img.PNG);
 }
 
 .second_project {
-    background-image: url(./image/projekt1_img.PNG);
+    background-image: url(../image/projekt1_img.PNG);
     background-position: top left;
 }
 
 .third_project{
-    background-image: url(./image/projekt3_img.PNG);
+    background-image: url(../image/projekt3_img.PNG);
 }
 
 .project h3{
